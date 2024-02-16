@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>login page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+    
+ 
+  <div class="container-fluid">
 
-<body class="homebody">
+   <div class="row text-center loginbody">
+      <div class="col-lg-8 col-md-10  text-center quote1">
 
-    <nav class="navbar navbar-expand-lg bg-danger ">
-        <div class="container-fluid topnav">                    
-           
-                <a class="nav-link active  " aria-current="page" href="todo.html">Todo List</a>
-                <a class="nav-link" href="login.html"> LogOut</a>
-              
-                           
-              
-          
-            <!-- <form class="d-flex mynavbar " action="todo.html" >
-                <button class="btn btn-outline-danger mb-2" >Todo List</button>
-             
-            </form>
-            <a href=""> LogOut</a> -->
-            
-            <!-- <button class="btn btn-outline-light mb-2 me-2" type="submit"> LogOut</button>         -->
-    </div>         
+<h1 style="color: brown;"> secret of your future is   hidden in your daily routine..</h1>
+<img src="images/tod-1.png" alt="image" width="300px", height="300px">
+
+      </div>
+       <!-- login form starts here -->
+      <div class="col-lg-4 loginform">
+    <form action="#">
+      <h3><b><center>Login to Your Account</center></b> </h3>
+      <br>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="user Id">
+    
+          <span id="loginuseridmsg"></span>
+         
         </div>
-      </nav>
-      <!-- navbar ends here -->
-
-
-      <!-- mainpage image and text starts here -->
-
-      <div class="card text-center hometext">
-        <div class="card-header">
-            <h5 class="card-title">Main Goal Of The Day</h5>
-        </div>
-        <div class="card-body">
-          
-          <p class="card-text">Progressing at a snail's pace is still progress, and slow progress is better than no progress</p>
-          <a href="#" class="btn btn-danger">Go To Main Goal</a>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="loginPassword" >
+          <span id="loginpwdmsg"></span>
         </div>
         
-      </div>
-
-
-<!-- <div class="hometext">
-    <h1>My Day</h1>
-    <h5>Progressing at a snail's pace is still progress, and slow progress is better than no progress</h5>
-
-</div> -->
-
-
- <!-- mainpage image and text ends here -->
-
-   
-      <script src="script.js"></script>
+        <center>
+        <button type="reset" onclick="validateLoginPage(mainpage);"class="btn btn-light">Login</button></center>
+      </form>
+    </div>
+    <!-- login ends here -->
+  </div>
+  </div>
+    <script src="script.js"></script>
 </body>
 </html>
